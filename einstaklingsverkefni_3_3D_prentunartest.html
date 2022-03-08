@@ -7,7 +7,6 @@
 <html>
 	<head>
 		<title>Huldar</title>
-		<link rel="icon" href="images/H.png" type="image/png">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -19,8 +18,7 @@
 			<div id="wrapper">
 
 				<!-- Header -->
-				<!-- Note: The "styleN" class below should match that of the banner element. -->
-					<header id="header" class="alt style2">
+					<header id="header">
 						<a href="index.html" class="logo"><strong>Home</strong> <span>Page</span></a>
 						<nav>
 							<a href="#menu">Menu</a>
@@ -44,142 +42,108 @@
 					</ul> -->
 				</nav>
 
-				<!-- Banner -->
-				<!-- Note: The "styleN" class below should match that of the header element. -->
-					<section id="banner" class="style2">
-						<div class="inner">
-							<span class="image">
-								<img src="images/pic07.jpg" alt="" />
-							</span>
-							<header class="major">
-								<h1>Projects</h1>
-							</header>
-							<div class="content">
-								<p>Here you can see an overview of the projects</p>
-							</div>
-						</div>
-					</section>
-
 				<!-- Main -->
-					<div id="main">
+					<div id="main" class="alt">
 
-						<!-- One
+						<!-- One -->
 							<section id="one">
 								<div class="inner">
 									<header class="major">
-										<h2>Project 1 - Website creation</h2>
+										<h1>3D printer test</h1>
 									</header>
-									<p>The objective is to create this website including a clear way to navigate, some info about my CV and documentation on how this page was made.</p>
-									<a href="einstaklingsverkefni_1_vefsidugerd.html" class=link>Project 1</a>
-								</div>
-							</section> -->
+									<p>
+										This is a part of project 3 which is all about designing and 3D printing something that you can not manufacture using a 3-axis milling machine and scanning an object in 3D.
+										A part of that project is 
+									</p>
+									<span class="image main"><img src="Verkefni 3-3D printing/test_myndir/overhang.jpg" alt="Overhang" /></span>
+                  <h2>Part 1 - Preparation</h2>
+									<p>
+										To prepare we search the web for a way to test the capabilities of the 3D printer, stumbling upon this <a href="https://www.thingiverse.com/thing:2656594/files">all in one 3D printer test</a>
+										it is decided that is what we shall use. Oh and btw the printer being used is a <a href="https://www.monoprice.com/product?p_id=21711">monoprice select mini v2</a>.
+									</p>
 
-						<!-- Two -->
-							<section id="two" class="spotlights">
-								<section>
-									<a href="einstaklingsverkefni_1_vefsidugerd.html" class="image">
-										<img src="images/pic08.jpg" alt="" data-position="center center" />
-									</a>
-									<div class="content">
-										<div class="inner">
-											<header class="major">
-												<h3>Project 1 - Website creation</h3>
-											</header>
-											<p>The objective is to create this website including a clear way to navigate, some info about my CV and documentation on how this page was made.</p>
-													<ul class="actions">
-												<li><a href="einstaklingsverkefni_1_vefsidugerd.html" class="button">Learn more</a></li>
-											</ul>
-										</div>
-									</div>
-								</section>
-								<!-- <section>
-									<a href="coming_soon.html" class="image">
-										<img src="images/pic09.jpg" alt="" data-position="top center" />
-									</a>
-									<div class="content">
-										<div class="inner">
-											<header class="major">
-												<h3>Project 2 - Coming Soon</h3>
-											</header>
-											<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.</p>
-											<ul class="actions">
-												<li><a href="coming_soon.html" class="button">Learn more</a></li>
-											</ul>
-										</div>
-									</div>
-								</section>
-								<section>
-									<a href="coming_soon.html" class="image">
-										<img src="images/pic10.jpg" alt="" data-position="25% 25%" />
-									</a>
-									<div class="content">
-										<div class="inner">
-											<header class="major">
-												<h3>Project 2 - Coming Soon</h3>
-											</header>
-											<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.</p>
-											<ul class="actions">
-												<li><a href="coming_soon.html" class="button">Learn more</a></li>
-											</ul>
-										</div>
-									</div>
-								</section>
-							</section> -->
+                  <h2>Part 2 - Implementation</h2>
+										<h3>Settings</h3>									
+										<p>
+											After downloading the file we want to print it and to do that we must configure some settings in ultimaker cura, the slicer being used, because this is what the file looks like after just uploading it:
+										</p>
+										<img src="Verkefni 3-3D printing/test_myndir/Cura1.png" alt="Cura first input" height="250">
+										<p>
+											The settings we must configure are various, such as setting the build plate adhesion to a skirt so we get a nice flow of filament going on before starting the actual print, this helps make sure the first layer is printed well.
+										</p>
+										<img src="Verkefni 3-3D printing/test_myndir/build_plate_adhesion1.png" alt="Build plate adhesion" height="250">
+										<p>
+											.
+										</p>
+									<img src="Verkefni 3-3D printing/clamp_thingiverse_solution.png" alt="Skissa 1" height="250">
+									<p>
+										Well, no time to waste so we start modeling. We're using the program Freecad to draw, not fusion360 even though that program is really cool, because
+										this summer I need to use freecad so I might as well practice now.
+									</p>
 
-						<!-- Three
-							<section id="three">
-								<div class="inner">
-									<header class="major">
-										<h2>Massa libero</h2>
-									</header>
-									<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet pharetra et feugiat tempus.</p>
-									<ul class="actions">
-										<li><a href="coming_soon.html" class="button next">Get Started</a></li>
-									</ul>
-								</div>
-							</section> -->
+                  <h2>Part 3 - Project 1 documentation</h2>
+									<p>
+										Creating this page was done fairly close to real time with all the other steps meaning I mostly documented what I could while I did it.
+									</p>
 
-					</div>
+									<h2>Part 4 - 3D scan</h2>
+									<p>
+										It is now time to do the 3D scan.
+									</p>
 
-				<!-- Contact -->
-				<section id="contact">
-					<div class="inner">
-						<section class="split">
-							<section>
-								<div class="contact-method">
-									<span class="icon solid alt fa-envelope"></span>
-									<h3>Email</h3>
-									<a href="huldarh@gmail.com">huldarh@gmail.com</a>
+
+									<h2>Part 5 - Fixes</h2>
+									<p>Here I document smaller fixes of things that make the website just a little bit better"</p>
+
+									<h3>The tab name</h3>
+									<p>Oh and to insert the images for this fix I had to google that wich also allowed me to insert all the other images on this page.</p>
+									<img src="Verkefni 1-Vefsíða/html_insert_image.png" alt="Google results for 'html insert image'" height="250">
 								</div>
 							</section>
-						</section>
 					</div>
-				</section>
 
-			<!-- Footer -->
+
+				<!-- Footer -->
 				<footer id="footer">
 					<div class="inner">
-						<ul class="icons">
-							<li><a href="https://www.youtube.com/channel/UCVo_mlGC_Y9I1ETIP_AaN6A" class="icon brands alt fa-youtube"><span class="label">Youtube</span></a></li>
-							<li><a href="https://github.com/G0rocks" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-							<li><a href="https://www.linkedin.com/in/huldar-h-323417190/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-						</ul>
-						<ul class="copyright">
-							<li>&copy; </li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-						</ul>
+
+						<!-- Contact -->
+						<section id="contact">
+							<div class="inner">
+								<section class="split">
+									<section>
+										<div class="contact-method">
+											<span class="icon solid alt fa-envelope"></span>
+											<h3>Email</h3>
+											<a href="huldarh@gmail.com">huldarh@gmail.com</a>
+										</div>
+									</section>
+								</section>
+								<setction class="split">
+									<ul class="icons">
+										<li><a href="https://www.youtube.com/channel/UCVo_mlGC_Y9I1ETIP_AaN6A" class="icon brands alt fa-youtube"><span class="label">Youtube</span></a></li>
+										<li><a href="https://github.com/G0rocks" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+										<li><a href="https://www.linkedin.com/in/huldar-h-323417190/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+									</ul>
+									<ul class="copyright">
+										<li>&copy; </li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+									</ul>
+								</setction>
+							</div>
+						</section>
 					</div>
 				</footer>
-
 		</div>
 
-	<!-- Scripts -->
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/jquery.scrolly.min.js"></script>
-		<script src="assets/js/jquery.scrollex.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
 
-</body>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
