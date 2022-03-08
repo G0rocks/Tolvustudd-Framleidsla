@@ -96,26 +96,130 @@
 									<img src="Verkefni 3-3D printing/clamp_thingiverse_solution.png" alt="Skissa 1" height="250">
 									<p>
 										Well, no time to waste so we start modeling. We're using the program Freecad to draw, not fusion360 even though that program is really cool, because
-										this summer I need to use freecad so I might as well practice now.
+										this summer I need to use freecad so I might as well practice now. I won't bore you with the details of the drawing in text but here are some screenshots.
 									</p>
 
-                  <h2>Part 3 - Project 1 documentation</h2>
+									<img src="Verkefni 3-3D printing/CAD_1.png" alt="CAD 1" height="250">
+									<img src="Verkefni 3-3D printing/CAD_2.png" alt="CAD 2" height="250">
+									
 									<p>
-										Creating this page was done fairly close to real time with all the other steps meaning I mostly documented what I could while I did it.
+										Of course to make the dimensions correct we had to measure the actual broomstick.
 									</p>
+
+									<img src="Verkefni 3-3D printing/Skidmal_maeling.jpg" alt="Measuring broomstick diameter" height="250">
+
+									<p>
+										And then we estimated all the other dimensions such as how far down the shaft of the broom the design needs to go for good grip,
+										how wide my hand is (though I kind of knew that) and such, setting all the dimensions up in Freecad.
+									</p>
+
+									<img src="Verkefni 3-3D printing/spreadsheet.png" alt="Dimensions spreadsheet Freecad" height="250">
+
+									<p>
+										When the design was finished it was time to go to manufacturing.
+									</p>
+
+                  <h2>Part 3 - Manufacturing</h2>
+									<p>
+										After finishing the design we bring it into ultimaker cura (the slicer) to set the required settings and export the gcode file to the printer when we realise
+									</p>
+
+									<img src="Verkefni 3-3D printing/Cura_1.png" alt="Cura 1 - Too big" height="250">
+
+									<p>
+										We totally forgot to include the height of the 3D printer build volume (which is 120mm) as a design constraint.
+									</p>
+
+									<img src="Verkefni 3-3D printing/facepalm-epic.gif" alt="Epic facepalm" height="250">
+
+									<p>
+										This was a quick fix though since we could just alter the distance traveled along the broomstick in the freecad spreadsheet and a moment later we had ourselves a design that fit into the printers build volume.
+									</p>
+
+									<img src="Verkefni 3-3D printing/cura_2_fix.png" alt="Fixing the size of the shaft length" height="250">
+									
+									<img src="Verkefni 3-3D printing/Cura_3.png" alt="Cura 3 - Just right" height="250">
+
+									<p>
+										Originally we set the layer height to 0.175mm, the infill to 20% and add build plate adhesion (since we have a towering print).
+									</p>
+
+									<img src="Verkefni 3-3D printing/Cura_4.png" alt="Cura 4 - Base settings" height="250">
+
+									<p>
+										The feeling arises that this infill won't be enough since this will be used for a while so we increase it to 40% and the whole thing becomes really dense, we didn't notice at the time but the slicer switched from a grid infill to lines.
+									</p>
+
+									<img src="Verkefni 3-3D printing/Cura_5.png" alt="Cura 5 - More infill and lines not a grid" height="250">
+
+									<p>
+										Though soon after we realised and switched to the grid again.
+									</p>
+
+									<img src="Verkefni 3-3D printing/Cura_6.png" alt="Cura 6 - Grid infill" height="250">
+
+									<p>
+										Looking at the brim we realise that it's awfully small so just to err on the side of too much stability rather than not enough we increase the number of rounds in the brim to 25.
+									</p>
+
+									<img src="Verkefni 3-3D printing/Cura_7.png" alt="Cura 7 - 25 Lines of brim" height="250">
+
+									<p>
+										This results in an estimated print time of 4 hours and 10 minutes using around 40g of filament or 13.31m.
+									</p>
+
+									<img src="Verkefni 3-3D printing/Cura_8.png" alt="Cura 8 - Print time and material used" height="250">
+
+									<p>
+										The temperature settings are 205°C for the hot end and 65°C as per the recommendation of the filament producer.
+									</p>
+
+									<img src="Verkefni 3-3D printing/Cura_9.png" alt="Cura 9 - Temperatures" height="250">
+
+									<p>
+										To be able to tighten the slit gap in the design we went and bought a bolt and a nut... Yes we only bought one of each... Yes it was hilarious.
+									</p>
+
+									<img src="Verkefni 3-3D printing/print_myndir/IMG_1821.HEIC" alt="Nuts" height="250">
+									<img src="Verkefni 3-3D printing/print_myndir/IMG_1822.HEIC" alt="Bolts" height="250">
+									<img src="Verkefni 3-3D printing/print_myndir/IMG_1824.PNG" alt="Total price" height="250">
+									<img src="Verkefni 3-3D printing/print_myndir/IMG_1833.HEIC" alt="Bolt and nut" height="250">
+									
+									<p>
+										The print time for the shaft was a little longer than the slicer estimated (which is normal for this printer) or around 4 hours and 39 minutes.
+									</p>
+
+									<img src="Verkefni 3-3D printing/print_myndir/IMG_1831.HEIC" alt="Print done" height="250">
+
+									<p>
+										Removing the brim the top (this was printed upside down) is a little bit rough around the edges but we can fix that with some sanding.
+									</p>
+
+									<img src="Verkefni 3-3D printing/print_myndir/IMG_1835.HEIC" alt="Removed brim" height="250">
+									
+									<h2>Part 4 - Assembly</h2>
+									<p>
+										It fits perfectly, looks like you almost don't need the tightening slit.
+									</p>
+
+									<img src="Verkefni 3-3D printing/print_myndir/IMG_1836.PNG" alt="Fit" height="250">
+									
+									<p>
+										When putting the bolt into the hole I realise that a 0.2mm tolerance might have been a little too tight because I had to thread the bolt but it's totally fine. Used <a href="https://convertio.co/mov-gif/">this website</a> to convert a video to a gif to be able to insert this here below.
+									</p>
+
+									<img src="Verkefni 3-3D printing/print_myndir/IMG_1839.gif" alt="Threading bolt gif" height="250">									
+
+									<p>
+										The final result is very sturdy and comfortable, seems strong enough, is actually quite comfortable and has a good grip.
+									</p>
+
+									<img src="Verkefni 3-3D printing/print_myndir/IMG_1840.HEIC" alt="Assembled" height="250">									
 
 									<h2>Part 4 - 3D scan</h2>
 									<p>
 										It is now time to do the 3D scan.
 									</p>
-
-
-									<h2>Part 5 - Fixes</h2>
-									<p>Here I document smaller fixes of things that make the website just a little bit better"</p>
-
-									<h3>The tab name</h3>
-									<p>Oh and to insert the images for this fix I had to google that wich also allowed me to insert all the other images on this page.</p>
-									<img src="Verkefni 1-Vefsíða/html_insert_image.png" alt="Google results for 'html insert image'" height="250">
 								</div>
 							</section>
 					</div>
